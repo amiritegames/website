@@ -32,7 +32,6 @@
                font-size: 20vw;
                animation-name: zoomIn;
                animation-duration: 5s;
-               animation-delay: 1s;
            }
            @keyframes filter-animation {
                 0% {
@@ -57,8 +56,13 @@
                     transform: scale3d(.9, .9, .9);
                 }
 
-                40% {
-                    opacity: 1;
+                10% {
+                    opacity: 0;
+                    transform: scale3d(.9, .9, .9);
+                }
+
+                60% {
+                    opacity: 0.75;
                 }
             }
 
