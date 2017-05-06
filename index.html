@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>amirite?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
+        <style>
+           body {
+               margin: 0;
+               animation: filter-animation 5s infinite;
+           }
+           .Page {
+               height: 100vh;
+               display: -ms-flexbox;
+               display: flex;
+               -ms-flex-align: center;
+                   align-items: center;
+               -ms-flex-pack: center;
+                   justify-content: center;
+           }
+           .Logo {
+               background: linear-gradient(to top right, #fc00ff, #00dbde);
+               -webkit-background-clip: text;
+                background-clip: text;
+               margin: 0;
+               color: transparent;
+               font-family: 'Fascinate', cursive;
+               font-size: 20vw;
+           }
+           @keyframes filter-animation {
+                0% {
+                    -webkit-filter: hue-rotate(0deg);
+                            filter: hue-rotate(0deg);
+                }
+
+                50% {
+                    -webkit-filter: hue-rotate(40deg);
+                            filter: hue-rotate(40deg);
+                }
+
+                100% {
+                    -webkit-filter: hue-rotate(0deg);
+                            filter: hue-rotate(0deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Page">
+            <h1 class="Logo">amirite?</h1>
+        </div>
+    </body>
+</html>
